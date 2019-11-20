@@ -15,10 +15,10 @@ app.config['DEBUG'] = True
 def verify_signin():
     
     
-    username   = html.escape(request.form['username'])
-    password_1 = html.escape(request.form['password_1'])
-    password_2 = html.escape(request.form['password_2'])
-    email      = html.escape(request.form['email'])
+    username   = request.form['username']
+    password_1 = request.form['password_1']
+    password_2 = request.form['password_2']
+    email      = request.form['email']
     error_username   = ""
     error_password_1 = ""
     error_password_2 = ""
