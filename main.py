@@ -38,7 +38,7 @@ def verify_signin():
             
             error_email = 'Invalid Email'
             email=''
-        if email.count('@')!=1 or email.count('.')!=1:
+        if email.count('@')!=1 and email.count('.')!=1:
 
             error_email = 'Invalid Email'
             email=''
